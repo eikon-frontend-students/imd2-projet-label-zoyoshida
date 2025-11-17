@@ -28,21 +28,14 @@
         />
       </div>
 
-      <div class="chevrons">
-        <button class="Chevron-left">
-          <img src="images/Chevron-left.svg" alt="Slide left" />
-        </button>
-        <button class="chevron-right">
-          <img src="images/chevron-right.svg" alt="Slide right" />
-        </button>
-      </div>
+      <include src="./component/chevron.html"></include>
     </div>
 
     <div class="carousel-artist">
       <p class="marker">Currently working with</p>
 
       <div class="artist vundabar">
-        <img src="images/artist-vundabar.png" alt="Vundabar's group photo" />
+        <a href="#"><img src="images/artist-vundabar.png" alt="Vundabar's group photo" /></a>
         <h1>Vundabar</h1>
         <a href="#" class="button-link">About the Artist</a>
         <a href="#" class="button-link">Website</a>
@@ -52,10 +45,10 @@
         <a href="#" class="button-social">youtube music</a>
         <a href="#" class="button-social">Deezer</a>
       </div>
-
+      
       <div class="artist Korn">
-        <img src="images/artist-korn.jpg" alt="Korn's group photo" />
-        <h1>Vundabar</h1>
+        <a href="#"><img src="images/artist-korn.jpg" alt="Korn's group photo" /></a>
+        <h1>Korn</h1>
         <a href="#" class="button-link">About the Artist</a>
         <a href="#" class="button-link">Website</a>
         <a href="#" class="button-social">spotify</a>
@@ -66,7 +59,7 @@
       </div>
 
       <div class="artist ghost">
-        <img src="images/artist-vundabar.png" alt="Vundabar's group photo" />
+        <a href="#"><img src="images/artist-ghost.jpg" alt="Ghost's group photo" /></a>
         <h1>Ghost</h1>
         <a href="#" class="button-link">About the Artist</a>
         <a href="#" class="button-link">Website</a>
@@ -75,6 +68,86 @@
         <a href="#" class="button-social">apple music</a>
         <a href="#" class="button-social">youtube music</a>
         <a href="#" class="button-social">Deezer</a>
+      </div>
+
+      <div class="artist EccaVandal">
+        <a href="#"><img
+          src="images/artist-EccaVandal.webp"
+          alt="Ecca Vandal portrait photo"
+        /></a>
+        <h1>Ecca Vandal</h1>
+        <a href="#" class="button-link">About the Artist</a>
+        <a href="#" class="button-link">Website</a>
+        <a href="#" class="button-social">spotify</a>
+        <a href="#" class="button-social">tidal</a>
+        <a href="#" class="button-social">apple music</a>
+        <a href="#" class="button-social">youtube music</a>
+        <a href="#" class="button-social">Deezer</a>
+      </div>
+
+      <div class="artist SoccerMommy">
+        <a href="#">
+          <img
+          src="images/artist-SoccerMommy.jpg"
+          alt="Soccer Mommy portrait photo"
+        /></a>
+        <h1>Soccer Mommy</h1>
+        <a href="#" class="button-link">About the Artist</a>
+        <a href="#" class="button-link">Website</a>
+        <a href="#" class="button-social">spotify</a>
+        <a href="#" class="button-social">tidal</a>
+        <a href="#" class="button-social">apple music</a>
+        <a href="#" class="button-social">youtube music</a>
+        <a href="#" class="button-social">Deezer</a>
+      </div>
+
+      <include src="./component/chevron.html"></include>
+    </div>
+
+    <div class="bodega">
+      <div class="bodega-header">
+        <p class="marker">welcome to</p>
+        <h1 class="bodega-title">Loma Vista's Bodega</h1>
+        <div class="buttons">
+          <a href="#" class="button-link">View US shop</a>
+          <a href="#" class="button-link">View Intl shop</a>
+          <a href="#" class="button-link">View Aus Shop</a>
+        </div>
+      </div>
+
+      <div class="bodega-articles">
+
+        <a href="#"><div class="article">
+          <img src="images/vinyl-conflict.png" alt="Vinyl" />
+          <pc class="author">Health</p>
+          <h2>Conflict DLC LP</h2>
+          <p class="price">$25.98</p>
+        </div></a>
+
+        <a href="#"><div class="article">
+          <img src="images/vinyl-colortheory.png" alt="Vinyl" />
+          <pc class="author">Soccer Mommy</p>
+          <h2>Color Theory - Limited edition yellow vinyl</h2>
+          <p class="price">$24.00</p>
+        </div></a>
+
+        <a href="#"><div class="article">
+          <img src="images/vinyl-surgeryandpleasure.png" alt="Vinyl" />
+          <pc class="author">Vundabar</p>
+          <h2>Surgery and Pleasure Limited Edition Milky Clear Vinyl</h2>
+          <p class="price">$23.98</p>
+        </div></a>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <p class="marker">Want to stay informed ? <br> Suscribe to</p>
+      <h1>Our newsletter</h1>
+      <div>
+        <form action="">
+          <input type="email" id="email" placeholder="E-mail">
+          <input type="submit" value="Subscribe" />
+        </form>
       </div>
     </div>
 
