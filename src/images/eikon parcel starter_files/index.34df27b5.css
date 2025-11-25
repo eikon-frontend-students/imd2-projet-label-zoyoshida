@@ -1,0 +1,377 @@
+@font-face {
+  font-family: Thunder;
+  src: url("../Thunder-BoldLC.34220d06.otf");
+}
+
+@font-face {
+  font-family: Futura Std Book;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Book), url("../fonts/FuturaStdBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Book Oblique;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Book Oblique), url("../fonts/FuturaStdBookOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Light Condensed;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Light Condensed), url("../fonts/FuturaStdCondensedLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Light;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Light), url("../fonts/FuturaStdLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Light Condensed Oblique;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Light Condensed Oblique), url("../fonts/FuturaStdCondensedLightObl.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Light Oblique;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Light Oblique), url("../fonts/FuturaStdLightOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Medium Condensed;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Medium Condensed), url("../fonts/FuturaStdCondensed.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Medium;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Medium), url("../fonts/FuturaStdMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Medium Condensed Oblique;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Medium Condensed Oblique), url("../fonts/FuturaStdCondensedOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Medium Oblique;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Medium Oblique), url("../fonts/FuturaStdMediumOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Heavy;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Heavy), url("../fonts/FuturaStdHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Heavy Oblique;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Heavy Oblique), url("../fonts/FuturaStdHeavyOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Bold), url("../fonts/FuturaStdBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Bold Condensed;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Bold Condensed), url("../fonts/FuturaStdCondensedBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Bold Oblique;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Bold Oblique), url("../fonts/FuturaStdBoldOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Bold Condensed Oblique;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Bold Condensed Oblique), url("../fonts/FuturaStdCondensedBoldObl.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Extra Bold Condensed;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Extra Bold Condensed), url("../fonts/FuturaStdCondensedExtraBd.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Extra Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Extra Bold), url("../fonts/FuturaStdExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Extra Bold Condensed Oblique;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Extra Bold Condensed Oblique), url("../fonts/FuturaStdCondExtraBoldObl.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura Std Extra Bold Oblique;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Futura Std Extra Bold Oblique), url("../fonts/FuturaStdExtraBoldOblique.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  --black: #000;
+  --Red-orange-ish: #e95b42;
+  --white-100: #f5f6ef;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img, video {
+  display: block;
+}
+
+body {
+  background: radial-gradient(70.27% 63.39% at 74.31% 1.59%, #993c3c29 35.58%, #0000 100%), radial-gradient(75.7% 30.28% at 87.08% 58.59%, #993c3c1f 35.58%, #0000 100%), radial-gradient(66.91% 73.09% at 18.13% 34.23%, #993c3c30 19.71%, #0000 100%), var(--black);
+  color: #fff;
+  font-family: Futura Std, sans-serif;
+}
+
+header {
+  backdrop-filter: blur(8px);
+  border: 1px solid #ffffff4d;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 74px;
+  padding: 24px;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+header img {
+  padding-top: 76px;
+}
+
+header nav {
+  gap: 16px;
+  display: flex;
+}
+
+header nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.icon-label {
+  font-family: "Font Awesome 7 Brands";
+}
+
+.icon-classic {
+  font-family: "Font Awesome 7 Free";
+}
+
+footer {
+  background: var(--Red-orange-ish);
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: stretch;
+  align-items: center;
+  gap: 80px;
+  padding: 40px 142px;
+  display: flex;
+}
+
+footer div {
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+  display: flex;
+}
+
+footer img {
+  mix-blend-mode: lighten;
+}
+
+footer nav {
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  display: flex;
+}
+
+footer nav a {
+  border-right: 1px solid var(--white-100);
+  padding: 4px 12px;
+}
+
+footer nav a:last-child {
+  border-right: none;
+}
+
+.chevrons {
+  justify-content: space-between;
+  align-items: center;
+  width: 99vw;
+  padding: 0 24px;
+  display: flex;
+  position: absolute;
+}
+
+a[class*="button"] {
+  text-transform: uppercase;
+  border: 1px solid var(--white-100);
+  min-width: min-content;
+  height: 46px;
+  max-height: 46px;
+  padding: 8px;
+  font-family: Thunder;
+  font-size: 40px;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+.carousel-hero {
+  scroll-snap-type: x mandatory;
+  height: 800px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.section-hero .chevrons {
+  mix-blend-mode: differences;
+  top: 400px;
+}
+
+.hero {
+  scroll-snap-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: row-reverse;
+  align-items: center;
+  min-width: 100vw;
+  height: 800px;
+  padding: 40px 140px;
+  display: flex;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  text-align: right;
+  font-family: Thunder;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 100px;
+}
+
+.lachryma {
+  background-image: url("../img/hero-ghost.6d34dd07.webp");
+}
+
+.molly {
+  background-image: url("../img/hero-ecca.3f23a479.webp");
+}
+
+.section-artist {
+  padding: 128px 0;
+}
+
+.section-artist .chevrons {
+  mix-blend-mode: differences;
+  top: 1144px;
+}
+
+.carousel-artist {
+  scroll-snap-type: x mandatory;
+  height: 448px;
+  padding: 0 50%;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.artist img {
+  object-fit: cover;
+  width: 448px;
+  height: 448px;
+}
+
+.artist {
+  scroll-snap-align: center;
+  gap: 24px;
+  display: flex;
+}
+
+.artist-info {
+  gap: 6px;
+  width: 566px;
+}
+
+.artist-info h1 {
+  text-transform: uppercase;
+  color: var(--Red-orange-ish);
+  font-family: Thunder, sans-serif;
+  font-size: 150px;
+}
+
+.bodega {
+  gap: 48px;
+  padding: 48px 70px;
+}
+
+.bodega-header {
+  text-align: center;
+}
+
+.bodega-articles {
+  justify-content: space-between;
+  display: flex;
+}
+
+.article {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.article-text {
+  max-width: 300px;
+}
+
+.newsletter {
+  text-align: center;
+  gap: 88px;
+  padding: 88px 260px;
+}
+/*# sourceMappingURL=index.34df27b5.css.map */

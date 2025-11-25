@@ -1,3 +1,182 @@
+/* ---------------------- fonts ---------------------- */
+@font-face {
+  font-family: Thunder;
+  src: url("../font/Thunder/Thunder-BoldLC.otf");
+}
+
+@font-face {
+  font-family: "Futura Std Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Book"),
+    url("../font/Futura-std-4-webfont/FuturaStdBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Book Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Book Oblique"),
+    url("../font/Futura-std-4-webfont/FuturaStdBookOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Light Condensed"),
+    url("../font/Futura-std-4-webfont/FuturaStdCondensedLight.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Light"),
+    url("../font/Futura-std-4-webfont/FuturaStdLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Light Condensed Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Light Condensed Oblique"),
+    url("../font/Futura-std-4-webfont/FuturaStdCondensedLightObl.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Light Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Light Oblique"),
+    url("../font/Futura-std-4-webfont/FuturaStdLightOblique.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Medium Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Medium Condensed"),
+    url("../font/Futura-std-4-webfont/FuturaStdCondensed.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Medium"),
+    url("../font/Futura-std-4-webfont/FuturaStdMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Medium Condensed Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Medium Condensed Oblique"),
+    url("../font/Futura-std-4-webfont/FuturaStdCondensedOblique.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Medium Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Medium Oblique"),
+    url("../font/Futura-std-4-webfont/FuturaStdMediumOblique.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Heavy"),
+    url("../font/Futura-std-4-webfont/FuturaStdHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Heavy Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Heavy Oblique"),
+    url("../font/Futura-std-4-webfont/FuturaStdHeavyOblique.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Bold"),
+    url("../font/Futura-std-4-webfont/FuturaStdBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Bold Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Bold Condensed"),
+    url("../font/Futura-std-4-webfont/FuturaStdCondensedBold.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Bold Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Bold Oblique"),
+    url("../font/Futura-std-4-webfont/FuturaStdBoldOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Bold Condensed Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Bold Condensed Oblique"),
+    url("../font/Futura-std-4-webfont/FuturaStdCondensedBoldObl.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Extra Bold Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Extra Bold Condensed"),
+    url("../font/Futura-std-4-webfont/FuturaStdCondensedExtraBd.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Extra Bold"),
+    url("../font/Futura-std-4-webfont/FuturaStdExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Extra Bold Condensed Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Extra Bold Condensed Oblique"),
+    url("../font/Futura-std-4-webfont/FuturaStdCondExtraBoldObl.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Futura Std Extra Bold Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Extra Bold Oblique"),
+    url("../font/Futura-std-4-webfont/FuturaStdExtraBoldOblique.woff")
+      format("woff");
+}
+
+/* ---------------------- styling ---------------------- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -36,6 +215,7 @@ body {
     var(--black);
 
   color: white;
+  font-family: "Futura Std", sans-serif;
 }
 
 /* --------- Header ---------- */
@@ -59,6 +239,20 @@ header img {
 
 header nav {
   display: flex;
+  gap: 16px;
+}
+
+header nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-label {
+  font-family: "Font Awesome 7 Brands";
+}
+
+.icon-classic {
+  font-family: "Font Awesome 7 Free";
 }
 
 /* ---------- footer ---------- */
@@ -102,18 +296,74 @@ footer nav a:last-child {
   border-right: none;
 }
 
+/* --------- Chevron --------- */
+
+.chevrons {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 99vw;
+  padding: 0px 24px;
+}
+
+/* --------- button --------- */
+
+a[class*="button"] {
+  height: 46px;
+  max-height: 46px;
+  min-width: min-content;
+  padding: 8px;
+
+  text-decoration: none;
+  font-family: Thunder;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 100%; /* 40px */
+
+  border: 1px solid var(--white-100);
+}
+
 /* ---------------- homepage ---------------- */
 
-/* --------- Hero -------- */
+/* --------- Hero --------- */
 .carousel-hero {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  height: 800px;
+  overflow-x: hidden;
+}
+
+.section-hero .chevrons {
+  top: 400px;
+  mix-blend-mode: differences;
 }
 
 .hero {
   height: 800px;
-  width: 100vw;
+  min-width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  scroll-snap-align: center;
+  padding: 40px 140px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.hero-title {
+  font-family: Thunder;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+
+  text-align: right;
 }
 
 .lachryma {
@@ -124,16 +374,24 @@ footer nav a:last-child {
   background-image: url("../images/hero-ecca.webp");
 }
 
-/* --------- Artist carousel -------- */
+/* --------- Artist carousel --------- */
 
 .section-artist {
   padding: 128px 0;
 }
 
+.section-artist .chevrons {
+  /* à réajuster */
+  top: 1144px;
+  mix-blend-mode: differences;
+}
+
 .carousel-artist {
+  height: 448px;
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  overflow-x: hidden;
 
   padding: 0px 50%;
 }
@@ -153,4 +411,46 @@ footer nav a:last-child {
 .artist-info {
   width: 566px;
   gap: 6px;
+}
+
+.artist-info h1 {
+  font-family: "Thunder", sans-serif;
+  font-size: 150px;
+  text-transform: uppercase;
+  color: var(--Red-orange-ish);
+}
+
+/* --------- Bodega! --------- */
+
+.bodega {
+  padding: 48px 70px;
+  gap: 48px;
+}
+
+.bodega-header {
+  text-align: center;
+}
+
+.bodega-articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.article-text {
+  max-width: 300px;
+}
+
+/* --------- newsletter --------- */
+
+.newsletter {
+  padding: 88px 260px;
+  text-align: center;
+  gap: 88px;
 }
