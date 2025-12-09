@@ -1,3 +1,21 @@
+.custom-cursor {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 350ms ease, opacity 200ms ease;
+  transform: translate(-50%, -50%) scale(0.3);
+  z-index: 1000;
+  will-change: transform, left, top, opacity;
+}
+.custom-cursor--link {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /* ---------------------- fonts ---------------------- */
 @font-face {
   font-family: Thunder;
@@ -216,6 +234,8 @@ body {
 
   color: white;
   font-family: "Futura Std", sans-serif;
+
+  cursor: none;
 }
 
 /* --------- Header ---------- */
@@ -357,8 +377,7 @@ footer nav a:last-child {
 /* --------- Hero --------- */
 
 .section-hero {
-  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="%23000000" stroke="%23000" stroke-width="0.25"></circle></svg>'),
-    pointer;
+  cursor: none;
 }
 
 .carousel-hero {
@@ -371,7 +390,7 @@ footer nav a:last-child {
 
 .section-hero .chevrons {
   top: 400px;
-  mix-blend-mode: differences;
+  mix-blend-mode: difference;
 }
 
 .hero {
@@ -386,13 +405,19 @@ footer nav a:last-child {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
+
+  background-attachment: fixed;
+}
+
+.section-hero a {
+  text-decoration: none;
 }
 
 .hero-title {
   font-family: Thunder;
-  font-size: 128px;
+  font-size: 180px;
   font-weight: 700;
-  line-height: 100px;
+  line-height: 132px;
   text-transform: uppercase;
 
   text-align: right;
@@ -422,7 +447,7 @@ footer nav a:last-child {
 .section-artist .chevrons {
   /* à réajuster */
   top: 1144px;
-  mix-blend-mode: differences;
+  mix-blend-mode: difference;
 }
 
 .carousel-artist {
