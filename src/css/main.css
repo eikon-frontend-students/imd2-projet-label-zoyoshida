@@ -311,19 +311,28 @@ footer nav a:last-child {
 
 /* --------- button --------- */
 
-a[class*="button"] {
+.button-link,
+.button-social {
   height: 46px;
   max-height: 46px;
   min-width: min-content;
   padding: 8px;
 
   text-decoration: none;
+
+  border: 1px solid var(--white-100);
+}
+
+.button-link {
   font-family: Thunder;
   font-size: 40px;
   text-transform: uppercase;
-  line-height: 100%; /* 40px */
+}
 
-  border: 1px solid var(--white-100);
+.button-social {
+  text-transform: none;
+  font-family: "Font Awesome 7 Brands", sans-serif;
+  font-size: 24px;
 }
 
 /* ---------------- homepage ---------------- */
@@ -420,11 +429,24 @@ a[class*="button"] {
   color: var(--Red-orange-ish);
 }
 
+.artist-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: fit-content;
+}
+
 /* --------- Bodega! --------- */
 
 .bodega {
   padding: 48px 70px;
   gap: 48px;
+}
+
+.bodega h1 {
+  font-family: "Thunder", sans-serif;
+  font-size: 128px;
+  text-transform: uppercase;
 }
 
 .bodega-header {
@@ -434,6 +456,7 @@ a[class*="button"] {
 .bodega-articles {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .article {
