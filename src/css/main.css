@@ -221,6 +221,7 @@ body {
 /* --------- Header ---------- */
 
 header {
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -309,6 +310,12 @@ footer nav a:last-child {
   padding: 0px 24px;
 }
 
+.marker {
+  font-family: "chantal", sans-serif;
+  color: var(--Red-orange-ish);
+  font-size: 40px;
+}
+
 /* --------- button --------- */
 
 .button-link,
@@ -323,6 +330,12 @@ footer nav a:last-child {
   border: 1px solid var(--white-100);
 }
 
+.button-link:hover,
+.button-social:hover {
+  color: var(--black);
+  background-color: var(--white-100);
+}
+
 .button-link {
   font-family: Thunder;
   font-size: 40px;
@@ -333,11 +346,21 @@ footer nav a:last-child {
   text-transform: none;
   font-family: "Font Awesome 7 Brands", sans-serif;
   font-size: 24px;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ---------------- homepage ---------------- */
 
 /* --------- Hero --------- */
+
+.section-hero {
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="%23000000" stroke="%23000" stroke-width="0.25"></circle></svg>'),
+    pointer;
+}
+
 .carousel-hero {
   display: flex;
   overflow-x: scroll;
@@ -389,6 +412,13 @@ footer nav a:last-child {
   padding: 128px 0;
 }
 
+.section-artist .marker {
+  position: absolute;
+  text-align: center;
+  left: 60px;
+  transform: rotate(-10deg);
+}
+
 .section-artist .chevrons {
   /* à réajuster */
   top: 1144px;
@@ -401,6 +431,7 @@ footer nav a:last-child {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   padding: 0px 50%;
 }
@@ -413,6 +444,7 @@ footer nav a:last-child {
 
 .artist {
   display: flex;
+  height: 448px;
   gap: 24px;
   scroll-snap-align: center;
 }
@@ -420,6 +452,7 @@ footer nav a:last-child {
 .artist-info {
   width: 566px;
   gap: 6px;
+  height: 448px;
 }
 
 .artist-info h1 {
@@ -431,9 +464,14 @@ footer nav a:last-child {
 
 .artist-links {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 6px;
-  max-width: fit-content;
+  padding-right: 40px;
+}
+
+.artist-links div {
+  display: flex;
+  gap: 6px;
 }
 
 /* --------- Bodega! --------- */
@@ -441,6 +479,11 @@ footer nav a:last-child {
 .bodega {
   padding: 48px 70px;
   gap: 48px;
+}
+
+.bodega .marker {
+  transform: rotate(5deg);
+  padding: 15px;
 }
 
 .bodega h1 {
@@ -455,8 +498,13 @@ footer nav a:last-child {
 
 .bodega-articles {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.bodega-articles a {
+  text-decoration: none;
 }
 
 .article {
@@ -468,12 +516,67 @@ footer nav a:last-child {
 
 .article-text {
   max-width: 300px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.article-text h2 {
+  text-transform: uppercase;
+  font-family: "Thunder", sans-serif;
+  font-size: 40px;
+}
+
+.author {
+  color: var(--Red-orange-ish);
 }
 
 /* --------- newsletter --------- */
 
 .newsletter {
-  padding: 88px 260px;
+  padding: 200px 260px;
   text-align: center;
   gap: 88px;
+}
+
+.newsletter .marker {
+  padding: 20px;
+  transform: rotate(-2deg);
+}
+
+.newsletter h1 {
+  font-size: 64px;
+  text-transform: uppercase;
+  font-family: "Thunder", sans-serif;
+}
+
+form {
+  padding: 40px;
+  display: flex;
+  gap: -1px;
+  justify-content: center;
+}
+
+input {
+  height: 50px;
+  padding: 4px 24px;
+  border: 1px solid var(--white-100, #f5f6ef);
+  background-color: var(--black);
+  color: var(--white-100);
+}
+
+.email {
+  width: 400px;
+}
+
+.submit {
+  font-family: "Thunder", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.submit:hover {
+  background-color: var(--white-100);
+  color: var(--black);
 }
