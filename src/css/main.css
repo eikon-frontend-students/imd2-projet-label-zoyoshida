@@ -622,3 +622,23 @@ input {
     "c c c c"
     "d d e e";
 }
+
+.intro-artist-gallery img:nth-child(1) {
+  grid-area: a;
+}
+
+.intro-artist-gallery img:nth-child(2) {
+  grid-area: b;
+}
+
+.intro-artist iframe {
+  grid-area: c;
+}
+
+.intro-artist-gallery img:nth-child(3) {
+  grid-area: d;
+}
+
+.intro-artist-gallery img:nth-child(4) {
+  grid-area: e;
+}
