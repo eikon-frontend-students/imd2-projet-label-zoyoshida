@@ -618,9 +618,22 @@ input {
 .intro-artist-gallery {
   display: grid;
   grid-template:
-    "a a b b"
-    "c c c c"
-    "d d e e";
+    "a b"
+    "c c"
+    "d e";
+  gap: 24px;
+  width: 920px;
+  height: 1219px;
+}
+
+.intro-artist-gallery h1 {
+  position: fixed;
+}
+
+.intro-artist-gallery img {
+  display: block;
+  max-height: 300px;
+  max-width: 100%;
 }
 
 .intro-artist-gallery img:nth-child(1) {
