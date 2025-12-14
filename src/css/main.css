@@ -612,35 +612,49 @@ input {
 .intro-artist {
   display: flex;
   justify-content: space-around;
-  align-items: end;
+  align-items: start;
+  margin-top: 74px;
+  gap: 24px;
+  padding: 24px;
 }
 
 .intro-artist-gallery {
   display: grid;
   grid-template:
-    "a b"
+    "a b" 300px
     "c c"
-    "d e";
-  gap: 24px;
+    "d e" 300px;
+  gap: 12px;
   width: 920px;
-  height: 1219px;
 }
 
-.intro-artist-gallery h1 {
-  position: fixed;
+.intro-artist h1 {
+  position: absolute;
+  top: 160px;
+  left: 200px;
+
+  mix-blend-mode: difference;
+
+  color: var(--Red-orange-ish, #e95b42);
+  text-align: center;
+  font-family: Thunder;
+  font-size: 200px;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
-.intro-artist-gallery img {
+.intro-artist-gallery .img {
   display: block;
-  max-height: 300px;
-  max-width: 100%;
+  background-size: cover;
+  max-height: 100%;
+  max-width: auto;
 }
 
-.intro-artist-gallery img:nth-child(1) {
+.intro-artist-gallery .img:nth-child(1) {
   grid-area: a;
 }
 
-.intro-artist-gallery img:nth-child(2) {
+.intro-artist-gallery .img:nth-child(2) {
   grid-area: b;
 }
 
@@ -648,10 +662,69 @@ input {
   grid-area: c;
 }
 
-.intro-artist-gallery img:nth-child(3) {
+.intro-artist-gallery .img:nth-child(3) {
   grid-area: d;
 }
 
-.intro-artist-gallery img:nth-child(4) {
+.intro-artist-gallery .img:nth-child(4) {
   grid-area: e;
+}
+
+.intro-artist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: sticky;
+  top: 98px;
+  /* bottom: 24px; */
+}
+
+.intro-artist-info .artist-links div {
+  flex-wrap: wrap;
+}
+
+.tour h2,
+.discography h2 {
+  font-family: Thunder;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.tour {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour-header .marker {
+  transform: translate(200px, -40px);
+  rotate: -5deg;
+}
+
+.tour-dates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+
+  min-width: 684px;
+}
+
+.tour-date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour-date a {
+  font-size: 20px;
+  padding: 4px;
+}
+
+.discography {
+  padding: 80px;
 }

@@ -12,37 +12,39 @@
     <include src="./component/header.html"></include>
 
     <div class="intro-artist">
+      <h1>Vundabar</h1>
       <div class="intro-artist-gallery">
-        <h1>Vundabar</h1>
-        <img
-          src="images/artist image-0.png"
-          alt="group photo"
-          style="object-fit: cover"
-        />
-        <img
-          src="images/artist image-1.png"
-          alt="concert photo"
-          style="object-fit: cover"
-        />
+        <!-- <img src="images/artist image-0.png" alt="group photo" />
+        <img src="images/artist image-1.png" alt="concert photo" /> -->
+        <div
+          class="img"
+          style="background-image: url('./images/artist image-0.png')"
+        ></div>
+        <div
+          class="img"
+          style="background-image: url('images/artist image-1.png')"
+        ></div>
+        <!-- remove # from #allow="autoplay" -->
         <iframe
           width="920"
           height="512"
-          src="https://www.youtube.com/embed/vaVvmOVvoiY"
+          src="https://www.youtube.com/embed/vaVvmOVvoiY?autoplay=1"
+          #allow="autoplay"
           frameborder="0"
           scrolling="no"
           allowfullscreen
         >
         </iframe>
-        <img
-          src="images/artist image-2.png"
-          alt="concert photo"
-          style="object-fit: cover"
-        />
-        <img
-          src="images/artist image-3.png"
-          alt="group photo"
-          style="object-fit: cover"
-        />
+        <!-- <img src="images/artist image-2.png" alt="concert photo" />
+        <img src="images/artist image-3.png" alt="group photo" /> -->
+        <div
+          class="img"
+          style="background-image: url('images/artist image-2.png')"
+        ></div>
+        <div
+          class="img"
+          style="background-image: url('images/artist image-3.png')"
+        ></div>
       </div>
 
       <div class="intro-artist-info">
@@ -123,6 +125,7 @@
     </div>
 
     <div class="discography">
+      <h2>discography</h2>
       <div class="album">
         <img
           src="images/vundabar-album-1.png"
