@@ -200,7 +200,7 @@
   margin: 0;
   padding: 0;
 
-  --black: #000;
+  --black: #100;
   --Red-orange-ish: #e95b42;
   --white-100: #f5f6ef;
 }
@@ -215,7 +215,7 @@ video {
 }
 
 body {
-  background: radial-gradient(
+  /* background: radial-gradient(
       70.27% 63.39% at 74.31% 1.59%,
       rgba(153, 60, 60, 0.16) 35.58%,
       rgba(0, 0, 0, 0) 100%
@@ -230,7 +230,9 @@ body {
       rgba(153, 60, 60, 0.19) 19.71%,
       rgba(0, 0, 0, 0) 100%
     ),
-    var(--black);
+    var(--black); */
+
+  background: var(--black);
 
   color: white;
   font-family: "Futura Std", sans-serif;
@@ -613,7 +615,7 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: start;
-  margin-top: 74px;
+  margin-top: 204px;
   gap: 24px;
   padding: 24px;
 }
@@ -679,6 +681,13 @@ input {
   /* bottom: 24px; */
 }
 
+.artist-legend {
+  font-family: "Futura Std Book";
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .intro-artist-info .artist-links div {
   flex-wrap: wrap;
 }
@@ -694,7 +703,7 @@ input {
 }
 
 .tour {
-  padding: 80px 0px;
+  padding: 100px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -746,7 +755,7 @@ input {
 }
 
 .discography {
-  padding: 80px 0px;
+  padding: 100px 0px;
 
   display: flex;
   flex-direction: column;
@@ -758,10 +767,21 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 72px 24px;
 }
 
 .album img {
   height: 330px;
   width: auto;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.album h3 {
+  font-weight: 500;
+  color: var(--Red-orange-ish);
 }
