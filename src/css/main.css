@@ -694,7 +694,7 @@ input {
 }
 
 .tour {
-  padding: 80px;
+  padding: 80px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -709,22 +709,59 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 0px;
 
-  min-width: 684px;
+  min-width: 384px;
 }
 
 .tour-date {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--white-100, #f5f6ef);
+}
+
+.tour-date:first-child {
+  border-top: 1px solid var(--white-100, #f5f6ef);
 }
 
 .tour-date a {
   font-size: 20px;
   padding: 4px;
+  align-self: flex-end;
+  height: min-content;
+}
+
+.tour-date div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tour-date div p:first-child,
+.tour-date div p:last-child {
+  font-weight: 650;
 }
 
 .discography {
-  padding: 80px;
+  padding: 80px 0px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.album img {
+  height: 330px;
+  width: auto;
 }
